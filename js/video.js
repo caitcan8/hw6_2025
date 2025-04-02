@@ -53,7 +53,7 @@ document.getElementById("mute").addEventListener("click", function() {
 // Change the volume based on the slider and update the volume information.
 document.getElementById("slider").addEventListener("change", function() {
 	video.volume = slider.value / 100;
-	document.getElementById("volume").textContent = slider.value;
+	document.getElementById("volume").textContent = slider.value + "%";
 });
 //Utilize the existing oldSchool class on the video element
 document.getElementById("vintage").addEventListener("click", function() {
