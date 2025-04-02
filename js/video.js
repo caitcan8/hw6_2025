@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
 document.getElementById("play").addEventListener("click", function() {
 	console.log("Play Video");
 	video.play();
+	document.getElementById("volume").textContent = slider.value + "%";
 });
 //Pause the video 
 document.getElementById("pause").addEventListener("click", function() {
